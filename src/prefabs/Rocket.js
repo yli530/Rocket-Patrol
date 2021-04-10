@@ -25,7 +25,7 @@ class Rocket extends Phaser.GameObjects.Sprite {
             this.y -= this.movementSpeed;
         }
 
-        if(this.y <= borderUISize * 3) {
+        if(this.y <= borderUISize * 3 + borderPadding) {
             this.reset();
         }
     }
